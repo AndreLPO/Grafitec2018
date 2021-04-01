@@ -1,0 +1,173 @@
+
+
+@charset "UTF-8";
+ /* Formatação galeria */
+ ul#albumloja{
+ 	width: 700px;
+ 	margin:0px auto;
+ 	padding: 50px;
+ 	list-style: none;
+ 	overflow: hidden;
+ }
+
+ ul#albumloja li{
+ 	float: left;
+ 	width: 200px;
+ 	height: 200px;
+ 	margin: 10px;
+ 	border: 5px solid white;
+ 	background-color: white;
+ 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+ }
+
+ ul#albumloja li:hover{
+ 	-webkit-transform: scale(1.5);
+ }
+
+ ul#albumloja li#foto1{ /*colocando imagens pelo css*/
+ 	background: url(../produtos/regura.png) no-repeat;
+ 	background-position: 50% 50%;
+ 	background-size: 400px 400px;
+ 	background-color: white;
+ 	transition: 1s;
+ }
+
+ ul#albumloja li#foto1:hover{ /*criando uma animação de zoom*/
+ 	background-position: 0px 0px;
+ 	background-size: 200px 200px;
+ }
+ 
+ ul#albumloja li#foto2{
+ 	background: url(../produtos/lapis2.png) no-repeat;
+ 	background-position: 50% 50%;
+ 	background-size: 400px 400px;
+ 	background-color: white;
+ 	transition: 1s;
+ 	}
+ 	
+ ul#albumloja li#foto2:hover{ /*criando uma animação de zoom*/
+ 	background-position: 0px 0px;
+ 	background-size: 200px 200px;
+ }
+
+ ul#albumloja li#foto3{
+ 	background: url(../produtos/grafites.png) no-repeat;
+ 	background-position: 50% 50%;
+ 	background-size: 400px 400px;
+ 	background-color: white;
+ 	transition: 1s;
+ }
+ 
+ul#albumloja li#foto3:hover{ /*criando uma animação de zoom*/
+ 	background-position: 0px 0px;
+ 	background-size: 200px 200px;
+ }
+
+ ul#albumloja li#foto4{
+ 	background: url(../produtos/canetinha.png) no-repeat;
+ 	background-position: 50% 50%;
+ 	background-size: 400px 400px;
+ 	background-color: white;
+ 	transition: 1s;
+ }
+
+ul#albumloja li#foto4:hover{ /*criando uma animação de zoom*/
+ 	background-position: 0px 0px;
+ 	background-size: 200px 200px;
+ }
+ 
+ ul#albumloja li#foto5{
+ 	background: url(../produtos/camiseta.png) no-repeat;
+ 	background-position: 50% 50%;
+ 	background-size: 400px 400px;
+ 	background-color: white;
+ 	transition: 1s;
+ }
+ 
+
+ ul#albumloja li#foto5:hover{ /*criando uma animação de zoom*/
+ 	background-position: 0px 0px;
+ 	background-size: 200px 200px;
+ }
+ ul#albumloja li#foto6{
+ 	background: url(../produtos/lapizeira1.png) no-repeat;
+ 	background-position: 50% 50%;
+ 	background-size: 400px 400px;
+ 	background-color: white;
+ 	transition: 1s;
+ }
+ 
+
+ ul#albumloja li#foto6:hover{ /*criando uma animação de zoom*/
+ 	background-position: 0px 0px;
+ 	background-size: 200px 200px;
+ }
+ ul#albumloja span{
+ 	opacity: 0;
+ 	color: white;
+ 	text-shadow: 1px 1px 2px black;
+ 	line-height: 370px;
+ 	font-size: 9pt;
+ 	padding: 5px;
+ 	background-color: rgba(1,1,1,.3);
+ 	transition: 1s;
+ }
+
+ul#albumloja li:hover span{
+	opacity: 1;
+}
+
+
+
+/* Formatação dos "cards" da loja*/
+img{
+		
+	padding-left: 10px;
+	height: 200px;
+	width: 200px;
+	border-radius: 20px;
+	border: 1px;
+	margin-bottom: 10px;
+}
+
+article#produto_loja{
+	float: left;
+	left: 50px;
+	display: block;
+	position: relative;
+	border: 1px solid #7b737c;
+	border-radius: 20px;
+	width: 45%;
+	margin-right: 15px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+article h2#nomprod{
+ shape-margin: 10px;
+}
+
+article p#precoprod{
+
+	margin-left: 70%;
+}
+
+article#produto_loja a{
+	width: 150px;
+	height: 25px;
+	background-color: rgba(0,0,0,.7);
+	border: 1px solid #7b737c;
+	border-radius: 20px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+	transition: background-color 1s, color 1s; 
+	
+}
+
+article#produto_loja a:hover{
+background-color: rgba(0,0,0,.5);
+color: black
+}

@@ -1,0 +1,26 @@
+﻿@charset "UTF-8";
+body{
+    background-color: #babac9;
+}
+img{
+	margin-bottom: 45px;
+}
+p{
+	border: 2px solid #7b737c;
+	border-radius: 15px;
+	box-shadow: 1px 1px 4px black;
+	color: black;
+	width: 650px;
+	height: 400px;
+	margin: auto;
+}
+input{
+	margin-top: 100px;
+}
+
+select{
+	display: block;
+	position: relative;
+	top: 50px;
+}
+

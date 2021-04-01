@@ -1,0 +1,588 @@
+@charset "UTF-8";
+
+body{
+    background-image: url("../_IMGS/fundo 2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Formatação do menu */
+
+.fixar{
+    position: fixed;
+    margin-top: 0px; 
+}
+
+
+
+
+nav#menu {
+    position: relative;
+
+}
+
+nav#menu ul{
+    font-family: cursive;
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -50px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+nav#menu li{
+    position: relative;
+    padding: 15px;
+    top: 50px;
+    margin-right: 0px;
+    margin-left: -35px;
+    transition: border-left 1s;
+    color: white;
+}
+
+
+
+nav#menu li#sair{
+    padding-right: 75px;
+    color: white;
+}
+
+li#sub1 ul{
+    position: absolute;
+    left: -34px;
+    top: 40px;
+    display: none;
+
+}
+
+li#sub1:hover ul{
+    display: block;
+}
+
+.baixo{
+    width: 0px;
+    height: 0px;
+    border: 9px solid transparent;
+    border-top-color: black ;
+    transition: border-top-color 1s;
+}
+
+.baixo:hover{
+    border-top-color: white;
+}
+
+nav#menu a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left: 3px solid rgba(0,0,0,0);
+    transition: color 2s, border-left-color 1s;
+}
+
+nav#menu a:hover{
+    color: rgba(255,255,255,.2);
+    border-left-color: white;
+}
+
+/* Fim da formatação do menu*/
+
+/*Formatação do cabeçalho*/
+
+
+header#cabecalho {
+    border-bottom: 8px rgba(0,0,0,.5) double;        
+    background-color: rgba(0,0,0,.7);
+    margin: 5px auto 0px auto;
+    background-image: url("../_IMGS/logotec.png");
+    background-repeat: no-repeat;
+    background-position: 70px 39px;
+    padding: 10px;
+    width: 98%;
+    height: 175px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    border-radius: 8px;
+    position: relative;
+    display: block;
+}
+
+
+header#cabecalho img#horarios{
+    position: absolute;
+    left: 70%;
+    top: 0px;
+
+}
+
+/*animações*/
+
+ .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
+
+/* Fim da Formatação do Cabeçalho*/
+
+/*Formatação do corpo*/
+
+div#interface {
+    width: 98%;
+    /*background-color: #BDB76B;*/
+    margin: 13px auto 02px auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: Candara;
+    font-size: 20pt;
+    margin-top: -05px;
+    margin-left: 20px;
+
+}
+
+header#cabecalho-artigo h2{
+    font-size: 15px;
+    font-family: "Comic Sans MS";
+
+ }
+
+header#cabecalho-artigo h3{
+font-size: 12px;
+}
+
+.direita{
+    text-align: right;
+    border-radius: 8px;
+}
+
+section#conteudo {
+    display: block;
+    
+    width: 75%;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+    border-left: 3px #B8860B solid;
+    margin-bottom: 8px;
+
+}
+
+section#conteudo h2{
+    font-family: fantasy;
+    background-color: rgba(0,0,0,.7);  
+    border-bottom: red;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+section#conteudo h4{
+    background-color:rgba(0,0,0,.7);  
+    border-radius: 8px;   
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+section#conteudo p{
+    font-family: cursive;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+table#tabela {
+    border: 1px solid #babac9;
+    top: 5px;
+    left: -100px;
+    border-spacing: 0px;
+    float: right;
+    position: relative;
+    display: block;
+}
+
+table#tabela caption span{
+    display: block;
+    font-size: 8pt;
+    float: right;
+}
+
+table#tabela caption{
+    font-family: "Comic Sans MS";
+    color: #babac9;
+    text-align: left;
+}
+
+
+#invisovel{
+    color: rgba(0,0,0,0);
+}
+
+
+table#tabela td{
+    border: 1px solid #babac9;
+    padding: 5px;
+    background-color: #babac9;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+table#tabela td.pt1{
+    background-color: #1d3380;
+    color: #babac9;
+    text-align: right;
+    vertical-align: top;
+    padding: 5px;
+
+}
+
+table#tabela td.pt2{
+    color: #babac9;
+    text-align: center;
+    background-color: #1d3380;
+}
+
+/* Conteúdo Secundário*/
+aside#secundaria{
+    display: block;
+    width: 20%;
+    height: 400px;
+    float: left;
+    padding: 10px 8px 0px 8px;
+    background-color:rgba(0,0,0,.7);
+    box-shadow: 0px 3px 8px black;
+    border-radius: 8px;
+}
+aside#secundaria h1{
+    text-align: center;
+    color: black;
+    font-family: "Comic Sans MS";
+}
+
+aside#secundaria a{
+    text-decoration: none;
+    color: white;
+}
+
+aside#secundaria p{
+    text-align: center;
+    color: black;
+    font-family: "Comic Sans MS";
+}
+
+
+ img.foto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+
+#formatdel{
+    left: 90%;
+    position: relative;
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    transition: 1s;
+}
+
+#formatdel:hover{
+    color: black;
+}
+
+
+
+/* Rodapé */
+footer#rodape{
+    clear: both;
+    border-top: 8px #1d3380 double;
+    margin-right: -10px;
+    margin-left: -10px;
+
+
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
+/* video*/
+
+video{
+    position: relative;
+    border: 8px double rgba(0,0,0,.7);
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px black;
+    margin-left: 39px;
+    width: 90%;
+    height: 510px;
+
+    }
+
+source{
+    
+    width: 100%;
+    height: 388px;
+}
+/*imagem*/
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px double rgba(0,0,0,.7);
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 388px;
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+
+
+}
+span#gg{
+    vertical-align: 40px;
+
+}
+
+fieldset{
+    padding: 10px;
+    border:4px double #1d3380;
+
+}
+
+section#conteudo p#precoprod{       
+    text-indent: -130px;
+
+   }
+
+
+/* formatação tabela preços */
+#tab1{
+    position: relative;
+    left: 10%;
+}
+.tab1{
+    position: relative;
+    left: 30%;
+}
+
+#tabarm{
+    left: 32%;
+    
+}
+
+#tab2{
+    position: relative;
+    left: 55%;
+    margin-top: -1182px;
+}
+
+.tabelapreco{
+    padding: 10px;
+    border: 1px solid #1d3380;  
+}
+
+.ptt1{
+    text-align: right;
+    font-family: cursive;
+    padding:10px;
+    border: 1px solid #1d3380;
+    border-left-width: 0px;
+    border-top-width: 0px;
+}
+
+.ptt2{
+    text-align: center;
+    font-family: cursive;
+    padding: 10px;
+    border: 1px solid #1d3380;
+    border-left-width: 0px;
+    border-top-width: 0px;   
+}
+
+.ptt3{
+    text-align: center;
+    font-family: cursive;
+    padding: 10px;
+    border: 1px solid #1d3380;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;   
+}
+
+
+/*formatação "quem somos"*/
+
+ul#us{
+    padding: 0px;
+
+    list-style: none;
+    overflow: hidden;
+    width: 99%;
+    border-radius:20px;
+    border: 0px solid black;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8); 
+}
+
+
+ul#us li{
+    float: left;
+    height: 70%;
+    width: 25%
+}
+
+ul#us li#pt01{
+    width: 25%;
+    border:0px solid black;
+    padding: 0px;
+    transition: 1s;
+    background-color: rgba(0,0,0,.4);
+}
+
+
+ul#us li#pt02{
+    width: 25%;
+    border:0px solid black;
+    padding: 0px;
+    
+}
+
+
+ul#us li#pt03{
+    width: 25%;
+    border:0px solid black;
+    padding: 0px;
+    background-color: rgba(0,0,0,.4);
+    }
+
+ul#us li#pt04{
+    width: 25%;
+    border:0px solid black;
+    padding: 0px;
+    }
+
+ul#us li#pt01 img#ft01{
+    position: relative;
+    left: 10%;
+    top: 15px;
+    border-radius: 250px;
+    border:.2px solid white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+ul#us li#pt02 img#ft02{
+    position: relative;
+    left: 10%;
+    top: 15px;
+    border-radius: 250px;
+    border:.2px solid white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+ul#us li#pt03 img#ft03{
+    position: relative;
+    left: 10%;
+    top: 15px;
+    border-radius: 250px;
+    border:.2px solid white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+ul#us li#pt04 img#ft04{
+    position: relative;
+    left: 10%;
+    top: 15px;
+    border-radius: 250px;
+    border: .2px solid white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+
+#mentira{
+    opacity: 0;
+    transition: 1s;
+    
+}
+
+#mentira:hover{
+    opacity: 0.25;
+}
+
+/*formatação pagina da apm&*/
+
+.titapm{
+    position: relative;
+    float: left;
+    background-color: green;
+    border:1px solid white;
+    padding: 10px;
+}
+
+.x{
+    position: relative;
+    color: red;
+}
+
+
+
+#patro1{
+    position: relative;
+    float: left;
+}
+
+#patro2{
+    position: relative;
+    float: right;
+}

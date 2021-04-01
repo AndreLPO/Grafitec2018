@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="_CSS/estilo.css">
+
+</head>
+<body>
+
+
+<center>
+
+<header>
+    <img src="_IMGS/etepa.png"/>
+</header>
+<form name="fomrlogin" method="post" action="login.php">
+    <select name='lugar'>
+    <option value='prof'>Professor</option>
+    <option value='login'>Aluno</option>
+    <option value='func'>Funcionário</option>
+</select>
+    <p>Login:  <input type="text" name="nick" id="nick" size="25" maxlength="20" placeholder="Digite seu usuario"/><br>
+Senha:  <input type="password" name="pass" id="pass" size="25" maxlength="8" placeholder="Digite sua senha"/><br>
+<input type="submit" name="Login" value="Logar"/> </p>
+</center>
+</form>
+</body>
+</html>
